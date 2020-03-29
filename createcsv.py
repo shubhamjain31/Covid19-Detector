@@ -1,10 +1,9 @@
-#zero for -ve and one for +ve
-#in case diffBreath(difficulty breathing) column, minus one is for high -ve, 0 for low -ve and one for +ve
-
+#importing essential libraries
 import random
 import pandas as pd
 import numpy as np
 
+#create data using random module
 idx = np.arange(100)
 l=[]
 for i in range(2500):
@@ -18,6 +17,11 @@ runnyNose  = np.random.randint(2,size=2500)
 diffBreath  = np.random.randint(-1,2,size=2500)
 infectionProb  = np.random.randint(2,size=2500)
 
+#initialize data
 data = {'fever':fever,'bodyPain':bodyPain,'age':age,'runnyNose':runnyNose,'diffBreath':diffBreath,'infectionProb':infectionProb}
+
+#create dataframe
 df = pd.DataFrame(data)
+
+#save csv file
 df.to_csv('data.csv',index=False)
