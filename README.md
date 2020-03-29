@@ -1,2 +1,2 @@
 # Covid19-Detector
-Detect Covid-19 using ML
+***A Machine Learning Based Approach on Predicting COVID-19**
