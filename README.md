@@ -1,5 +1,6 @@
 # Covid19-Detector
 ***A Machine Learning Based Approach on Predicting COVID-19***
+
 This repository summarizes that the patient is infected or not from COVID-19.
 
 Firstly, we create a model for checking the probability of patient i.e,higher the probability
