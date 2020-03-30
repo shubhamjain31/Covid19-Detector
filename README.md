@@ -7,7 +7,6 @@ Firstly, we create a model for checking the probability of patient i.e,higher th
 higher chances of infection.  
 Secondly, after creating a model we integrate it into flask app and predicting the result for COVID19.
 
-***Note:-*** 
 
 ## Tool
 1) Python
