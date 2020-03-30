@@ -1,5 +1,12 @@
 # Covid19-Detector
 ***A Machine Learning Based Approach on Predicting COVID-19***
+This repository summarizes that the patient is infected or not from COVID-19.
+
+Firstly, we create a model for checking the probability of patient i.e,higher the probability
+higher chances of infection.
+Secondly, after creating a model we integrate it into flask app and predicting the result for COVID19.
+
+***Note:-*** 
 
 ## Tool
 1) Python
