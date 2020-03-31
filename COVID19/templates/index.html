@@ -49,6 +49,13 @@
     </div>
 
      <div class="container w-50 bg-light">
+       <div class="row">
+      <div class="col-sm">
+        <div class="jumbotron jumbotron-fluid w-100 h-100">
+          <img src="{{url_for('static',filename='images/corona.jpg')}}" class="img-fluid h-100" alt="Responsive image">
+        </div>
+      </div>
+         <div class="col-sm">
         <form method="POST" action="/">
             <div class="form-group">
               <label for="fever" class="text-info font-weight-bold">Enter Fever Value</label>
@@ -82,7 +89,7 @@
                 </div>
             <button class="btn btn-dark center-block">Submit</button>
           </form>
-    
+        </div>
     </div>
     
     

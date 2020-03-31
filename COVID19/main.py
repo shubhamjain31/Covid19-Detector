@@ -18,8 +18,15 @@ def hello_world():
 		diffBreath = int(mydata['diffBreath'])
 		#code for inference
 		inputFeatures = [fever,age,pain,runnyNose,diffBreath]
+		data_list = [[fever,age,pain,runnyNose,diffBreath]]
+		predict_status = clf.predict(data_list)[0]
+		print(predict_status)
+		if predict_status == 1:
+			prediction = "Positive"
+		else:
+			prediction = "Negative"
 		infProb = clf.predict_proba([inputFeatures])[0][1]
-		return render_template('show.html',inf=round((infProb)*100))
+		return render_template('show.html',prediction=prediction,inf=round((infProb)*100))
 	return render_template('index.html')
 
 @app.route('/contactus')

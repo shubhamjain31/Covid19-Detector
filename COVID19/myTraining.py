@@ -15,7 +15,7 @@ def data_split(data,ratio):
 
 if __name__ == '__main__':
 	#read a csv file
-	df = pd.read_csv("data.csv")
+	df = pd.read_csv("corona.csv")
 	train,test = data_split(df,0.2)
 
 	#Splitting the dataset into Training set and Test set
